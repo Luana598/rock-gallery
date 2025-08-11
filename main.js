@@ -1,18 +1,66 @@
 'use strict'
 
 const imagens = [
-    "./img/acdc.jpg",
-    "./img/arctic_monkeys.jpg",
-    "./img/bowie.jpg",
-    "./img/hey_jude.jpg",
-    "./img/kiss.jpg",
-    "./img/maneskin.jpg",
-    "./img/silver_springs.jpg", 
-    "./img/under_pressure.jpg"   
+   {
+    nome: 'Acdc',
+    url: './img/acdc.jpg'
+   },
+
+   {
+    nome: 'ArcticMonkeys',
+    url: './img/arctic_monkeys.jpg'
+   },
+   {
+    nome: 'Bowie',
+    url:'./img/bowie.jpg'
+   },
+   {
+    nome:'HeyJude',
+    url:'./img/hey_jude.jpg'
+   },
+   {
+    nome: 'Kiss',
+    url:'./img/kiss.jpg'
+   },
+   {
+    nome: 'Maneskin',
+    url:'./img/maneskin.jpg'
+   },
+   {
+    nome: 'SilverSprings',
+    url:'./img/silver_springs.jpg'
+   }, 
+   {
+    nome: 'UnderPressure', 
+    url:'./img/under_pressure.jpg'
+   }
+
 ]
 
+function criarImagem (srcImagem){
+const galeria = document.getElementById('galeria')
+const imagem = document.createElement('img')
+
+imagem.src = srcImagem.url
+galeria.appendChild(imagem)
+
+}
+
 function carregarImagens (){
-    const galeria = document.getElementById('galeria')
-    galeria.textContent = "teste de JS!"
+  
+
+    // criando a galeria por um while
+
+    // let contador = 0
+    // const limite = imagens.length - 1
+    // while (contador <= limite){
+    //     const imagem = document.createElement('img')
+    //     imagem.src = imagens [contador] 
+    //     galeria.appendChild(imagem)
+    //     contador ++
+    // }
+
+    imagens.forEach(criarImagem)
+   
 }
 carregarImagens()

@@ -17,3 +17,11 @@ body{
     width: 100%;
     padding-block: 8px;
 }
+
+.info{
+    background-color: white;
+}
+
+.info span{
+    color: black;
+}
