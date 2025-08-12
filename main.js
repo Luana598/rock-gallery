@@ -2,36 +2,36 @@
 
 const imagens = [
    {
-    nome: 'Acdc',
+    nome: 'Highway to Hell - AC-DC!!',
     url: './img/acdc.jpg'
    },
 
    {
-    nome: 'ArcticMonkeys',
+    nome: 'AM - Arctic Monkeys!!',
     url: './img/arctic_monkeys.jpg'
    },
    {
-    nome: 'Bowie',
+    nome: 'David Bowie!!',
     url:'./img/bowie.jpg'
    },
    {
-    nome:'HeyJude',
+    nome:'Hey Jude - Beatles!!',
     url:'./img/hey_jude.jpg'
    },
    {
-    nome: 'Kiss',
+    nome: 'Kiss!!',
     url:'./img/kiss.jpg'
    },
    {
-    nome: 'Maneskin',
+    nome: 'Maneskin!!',
     url:'./img/maneskin.jpg'
    },
    {
-    nome: 'SilverSprings',
+    nome: 'Silver Springs - Stevie Nicks!!',
     url:'./img/silver_springs.jpg'
    }, 
    {
-    nome: 'UnderPressure', 
+    nome: 'Under Pressure - Queen ft Bowie!!', 
     url:'./img/under_pressure.jpg'
    }
 
@@ -41,8 +41,15 @@ function criarImagem (srcImagem){
 const galeria = document.getElementById('galeria')
 const imagem = document.createElement('img')
 
+const info = document.createElement('div')
+const texto = document.createElement('span')
+
 imagem.src = srcImagem.url
+texto.textContent = srcImagem.nome
+
 galeria.appendChild(imagem)
+galeria.appendChild(info)
+info.appendChild(texto)
 
 }
 

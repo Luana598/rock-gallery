@@ -18,10 +18,21 @@ body{
     padding-block: 8px;
 }
 
-.info{
+.galeria div{
     background-color: white;
+    position: relative;
 }
 
-.info span{
+.galeria span{
     color: black;
+    position: absolute;
+    width: 100%;
+    bottom: 1px;
+    background-color: rgba(255, 255, 255, 0.568);
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+
 }
+
